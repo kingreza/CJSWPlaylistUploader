@@ -1,17 +1,4 @@
 
-import com.dropbox.client2.session.WebAuthSession;
-
-import com.dropbox.client2.DropboxAPI;
-import com.dropbox.client2.DropboxAPI.Entry;
-
-
-
-
-import java.io.ByteArrayInputStream;
-
-
-
-
 public class CJSWPlaylistUploader {
 
 	/**
@@ -19,7 +6,7 @@ public class CJSWPlaylistUploader {
 	 */
 	    //private static final String APP_KEY = "chlldweqja93fzq";
 	   // private static final String APP_SECRET = "5930ax64vqmtz95";
-	    private static DropboxAPI<WebAuthSession> mDBApi;
+	   // private static DropboxAPI<WebAuthSession> mDBApi;
 	    public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 
@@ -97,14 +84,7 @@ public class CJSWPlaylistUploader {
 	    }
 		
 
-		System.out.println();
-		System.out.print("Uploading file ");
 		
-		String content = "I will  make it to the dropbox. I promise you that!";
-		
-		ByteArrayInputStream inputStream = new ByteArrayInputStream(content.getBytes());
-		Entry newEntry = mDBApi.putFile("/newFile.txt", inputStream, content.length(), null, null);
-		System.out.print("Done. \nRevision of file: "+newEntry.rev);
 	    }	
 
 }	
