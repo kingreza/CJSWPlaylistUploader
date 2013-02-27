@@ -69,6 +69,22 @@ public class DisplayManager {
 		System.out.println("When you're ready press Enter to look for playlists");
 		
 	}
+	public static void PROBLEMWITHCONFIG()
+	{
+		System.out.println("There was a problem loading the setting.config file");
+	}
+	public static void CREATEBLANKCOFIG()
+	{
+		System.out.println("setting.config file could not be located. A blank setting.config file is now created. Please fill it out and run the program again");
+	}
+	public static void DELETECONFIGFILE()
+	{
+		System.out.println("setting.config file is malformed, please delete the file and run the program again");
+	}
+	public static void PROBLEMWITHFOLDERS()
+	{
+		System.out.println("There was a problem setting up the intial folder structure on dropbox");
+	}
 	
 	
 
