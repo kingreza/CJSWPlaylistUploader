@@ -30,6 +30,11 @@ public class CJSWPlaylistUploader {
 				DisplayManager.DELETECONFIGFILE();
 				System.exit(1);
 			}
+			if (loadResult == -3)
+			{
+				DisplayManager.DELETECONFIGFILE();
+				System.exit(1);
+			}
 			
 		}
 		
